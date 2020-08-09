@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<style>
+.flex-container{
+  display: flex;                       /* establish flex container */
+  flex-wrap: wrap;                     /* enable flex items to wrap */
+  justify-content: space-around;
+}
+.grid {
+  display: flex;                       /* establish flex container */
+  flex-wrap: wrap;                     /* enable flex items to wrap */
+  justify-content: space-around;
+  
+}
+.cell {
+  flex: 0 0 32%;                       /* don't grow, don't shrink, width */
+  height: 50px;
+  margin-bottom: 5px;
+  background-color: #999;
+  text-align: center;
+}
+.cell:nth-child(3n) {
+  background-color: #F00;
+}
+    </style>
+<title>Sort & Suffle</title>
+<body>
+    <div id="app" class="flex-container">
+        <div id="board" class="grid" style="flex-grow: 8"></div>
+        <div id="actions" style="flex-grow: 2">
+            <button id="suffle">Suffle</button>
+            <button id="sort">Sort</button>
+        </div>
+    </div>
+    <script type="text/javascript" src="./index.js"></script>
+</body>
+
+</html>
